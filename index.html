@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Using Bootstraps</title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/scripts/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Logo</a>
+              </div>
+            <div class="container-fluid">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+            </div>
+            <form class="search-div light">
+              <input class="search-input me-2" type="text" placeholder="search">
+              <span>
+                <img src="images/search.svg" alt="">
+              </span>
+            </form>
+            <div class="dropdown dropstart">
+               
+                <nav class dropdown-toggle="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand"  data-bs-toggle="dropdown" href="#">
+                          <img src="/images/car1.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+                        </a>
+                      </div>
+                    </nav>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Profile.html">Profile</a></li>
+                    <li><a class="dropdown-item" href="Inbox.html">Inbox</a></li>
+                    <li><a class="dropdown-item" href="Login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="Signup.html">Signup</a></li>
+                  </ul>
+                </div>
+                
+          </nav>
+          <!-- NAVBAR -->
+    <!-- MAIN CONTENT -->
+    <div class="main">
+      <!-- LEFT SIDE -->
+      <aside class="left-menu">
+        <a href="#" class="a-link">
+          <img src="images/home.svg" alt="Home">
+          <span class="">Home</span>
+        </a>
+        <a href="#" class="a-link">
+          <img src="images/repost.svg" alt="Repost">
+          <span class="">Repost</span>
+        </a>
+        <a href="#" class="a-link">
+          <img src="images/heart.svg" alt="Favourite">
+          <span class="">Favourite</span>
+          <a href="#" class="a-link">
+            <img src="images/compass.svg" alt="Explore">
+            <span class="">Explore</span>
+          </a>
+          <a href="#" class="a-link">
+            <img src="images/activity.svg" alt="Category">
+            <span class="">Category</span>
+          </a>
+          <a href="#" class="a-link">
+            <img src="images/users.svg" alt="User">
+            <span class="">User</span>
+          </a>
+        </a>
+        <a href="#" class="a-link" data-bs-toggle="offcanvas" data-bs-target="#demo">
+          <img src="images/settings.svg" alt="Settings">
+          <span class="">Setting</span>
+        </a>
+      </aside>
+      <!-- LEFT SIDE -->
+     
+
+
+          <div class="mt-4 p-5 bg-success text-white rounded">
+            <h1>Car Hub</h1>
+            <p>Your one place to find cars...</p>
+          </div>
+        </section>
+        <!--RIGHT SIDE-->
+
+        <!--CAR GRID-->
+        <div classd="row">
+        <div class="col-md-4"><img src="images/car1.jpg" alt=""> </div>
+        </div>
+        <!--CAR GRID-->
+        </div>
+        <!--MAIN CONTENT-->
+
+        </div>
+        <div class="offcanvas offcanvas-end" id="demo">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title">settings</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Some text lorem ipsum.</p>
+            <p>Some text lorem ipsum.</p>
+            <button class="btn btn-secondary" type="button">A Button</button>
+          </div>
+        </div>
+
+  </body>
+  </html>
