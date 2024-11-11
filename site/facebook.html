@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Sign Up</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            height: 120vh;
+            margin: 0;
+        }
+        .signup-container {
+            background-color: white;
+            padding: 20px;
+            width: 400px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .signup-container h1 {
+            color: #1877f2;
+            font-size: 36px; /* Increased font size */
+            margin: 0;
+            text-align: center;
+        }
+        .signup-container h2 {
+            font-size: 20px;
+            color: #333;
+            margin: 10px 0 5px;
+            text-align: center;
+        }
+        .signup-container p {
+            font-size: 14px;
+            color: #606770;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .input-box {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .input-box input {
+            padding: 10px;
+            border: 1px solid #ccd0d5;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 100%;
+        }
+        .date-of-birth, .gender-options, .additional-info {
+            margin-bottom: 10px;
+        }
+        .date-of-birth select {
+            width: 32%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccd0d5;
+            border-radius: 4px;
+        }
+        .gender-options label {
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+        .gender-options input[type="radio"] {
+            margin-right: 5px;
+        }
+        .gender-options {
+            display: flex;
+            justify-content: space-between;
+        }
+        .signup-btn {
+            background-color: #42b72a;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .signup-btn:hover {
+            background-color: #36a420;
+        }
+        .login-btn {
+            background-color: #1877f2;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .login-btn:hover {
+            background-color: #155db8;
+        }
+        .additional-info {
+            font-size: 12px;
+            color: #606770;
+            text-align: center;
+            line-height: 1.4;
+        }
+        .login-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #1877f2;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h1>facebook</h1>
+        <h2>Create a new account</h2>
+        <p>It's quick and easy.</p>
+        <form action="https://www.facebook.com" method="get" target="_blank">
+            <div class="input-box">
+                <input type="text" placeholder="First name" required>
+                <input type="text" placeholder="Surname" required>
+            </div>
+            <div class="date-of-birth">
+                <label for="dob">Date of birth</label>
+                <select id="day">
+                    <!-- Days of the Week -->
+                    <option value="" disabled selected>Day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                </select>
+                <select id="month">
+                    <!-- Months January to December -->
+                    <option value="" disabled selected>Month</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                <select id="year">
+                    <!-- Years 1900 to 2024 -->
+                    <option value="" disabled selected>Year</option>
+                    <!-- Generate years from 1900 to 2024 -->
+                    <script>
+                        for (let i = 1900; i <= 2024; i++) {
+                            document.write('<option>' + i + '</option>');
+                        }
+                    </script>
+                </select>
+            </div>
+            <div class="gender-options">
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="custom"> Custom</label>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Mobile number or email address" required>
+                <input type="password" placeholder="New password" required>
+            </div>
+            <button type="submit" class="signup-btn">Sign Up</button>
+            <button type="button" class="login-btn" onclick="window.location.href='https://www.facebook.com/login.php'">Log In</button>
+            <div class="additional-info">
+                <p>People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more</a>.</p>
+                <p>By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

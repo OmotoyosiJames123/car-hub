@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation</title>
+    <script>
+        function display_location_enabled(){
+ // Default message
+ let str = "Geolocation is not supported in this browser"; 
+  if (window.navigator.geolocation) {
+ str = "Geolocation is supported in this browser";
+  }
+ let geo = window.navigator.geolocation;
+ alert (geo.getCurrentPosition(showPosition));
+}
+
+function showPosition(position) {
+    alert('Latitude:' + position.coords.latitude + '\n' + 'Longitude: ' + position.coords.longitude);
+}
+    </script>
+</head>
+<body onload="display_location_enabled()">
+    
+</body>
+</html>

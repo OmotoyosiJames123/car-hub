@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator objects</title>
+    <script>
+        document.write('Browser name:' +navigator.appName + '<BR />');
+        document.write('Browser name:' +navigator.appVersion+ '<BR />');
+
+        function pageReload(url){
+            location.reload(url);
+        }
+    </script>
+</head>
+<body>
+    <button type="button"
+    ondblick="pageReload('http://W3schools.com')">Reload</button>"
+</body>
+</html>

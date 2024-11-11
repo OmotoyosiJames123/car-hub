@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Object</title>
+    <script>
+        let car = new Object();
+       // CAR PROPERTIES
+       car.name = "bugatti";
+       car.sound = "horn";
+       car.color = "gray";
+       car.tires = 4;
+       // CAR ACTION/METHOD
+       car.reverse = function() {
+        alert("The" + this.name + "can reverse.");
+       };
+       document.write("Car action : ", car.reverse());
+       car.run = function (){
+        alert("The" + this.name + "can run.");
+       };
+       document.write("Car action : ", car.run());
+       car.stop = function(){
+        alert("The" + this.name + "can stop.");
+       };
+       document.write("Car action : ", car.stop());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

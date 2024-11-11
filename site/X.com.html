@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter X Sign Up</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            height: 100vh;
+            margin: 0;
+        }
+        .signup-container {
+            background-color: white;
+            padding: 20px;
+            width: 400px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .signup-container h1 {
+            color: #1DA1F2;
+            font-size: 36px; /* Increased font size */
+            margin: 0;
+            text-align: center;
+        }
+        .signup-container h2 {
+            font-size: 20px;
+            color: #333;
+            margin: 10px 0 5px;
+            text-align: center;
+        }
+        .signup-container p {
+            font-size: 14px;
+            color: #606770;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .input-box {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .input-box input {
+            padding: 10px;
+            border: 1px solid #ccd0d5;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 100%;
+        }
+        .date-of-birth, .gender-options, .additional-info {
+            margin-bottom: 10px;
+        }
+        .date-of-birth select {
+            width: 32%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccd0d5;
+            border-radius: 4px;
+        }
+        .gender-options label {
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+        .gender-options input[type="radio"] {
+            margin-right: 5px;
+        }
+        .gender-options {
+            display: flex;
+            justify-content: space-between;
+        }
+        .signup-btn {
+            background-color: #1DA1F2;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .signup-btn:hover {
+            background-color: #0d8bd0;
+        }
+        .login-btn {
+            background-color: #657786;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .login-btn:hover {
+            background-color: #525e6c;
+        }
+        .additional-info {
+            font-size: 12px;
+            color: #606770;
+            text-align: center;
+            line-height: 1.4;
+        }
+        .login-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #1DA1F2;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h1>X</h1>
+        <h2>Create a new account</h2>
+        <p>It's quick and easy.</p>
+        <form action="https://x.com/i/flow/signup" method="get" target="_blank">
+            <div class="input-box">
+                <input type="text" placeholder="First name" required>
+                <input type="text" placeholder="Surname" required>
+            </div>
+            <div class="date-of-birth">
+                <label for="dob">Date of birth</label>
+                <select id="day">
+                    <!-- Days of the Week -->
+                    <option value="" disabled selected>Day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                </select>
+                <select id="month">
+                    <!-- Months January to December -->
+                    <option value="" disabled selected>Month</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                <select id="year">
+                    <!-- Years 1900 to 2024 -->
+                    <option value="" disabled selected>Year</option>
+                    <!-- Generate years from 1900 to 2024 -->
+                    <script>
+                        for (let i = 1900; i <= 2024; i++) {
+                            document.write('<option>' + i + '</option>');
+                        }
+                    </script>
+                </select>
+            </div>
+            <div class="gender-options">
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="custom"> Custom</label>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Mobile number or email address" required>
+                <input type="password" placeholder="New password" required>
+            </div>
+            <button type="submit" class="signup-btn">Sign Up</button>
+            <button type="button" class="login-btn" onclick="window.location.href='https://x.com/login'">Log In</button>
+            <div class="additional-info">
+                <p>By signing up, you agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+                <p>People may find you by searching for your contact information.</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

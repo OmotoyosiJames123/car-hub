@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Using HTML Forms</title>
+    <link rel="stylesheet" href="styles/form.css" type="text/class" />
+</head>
+<body>
+    <form>
+        <form class ="my-form" action="table.html">
+            <div class="wrapper">
+                <label for="Name">Name:</label> 
+                <input type="text" class="input" id="Name" name="Name" placeholder="Your name" required>
+            </div>
+
+            <div class="wrapper">
+                <label for="email">Email:</label>
+                <input type="email" class="input" id="name" name="name" placeholder="Email address" required>
+             </div>
+             
+             <div class="wrapper"></div>
+              <label for="password">Password:</label>
+              <input type="password" class="input" id="password" placeholder="=********" name="password" required>
+                <div>
+
+                <div class="wrapper"></div>
+                  <label for="department">Department</label>
+                  <select class="select" id="department" required style="width: 100;">
+                    <option value="">Select Department</option>
+                    <option value="administrative">Administrative</option>
+                    <option value="sales">sales</option>
+                    <option value="Financial">Financial</option>
+                    <option value="Engineering">Engineering</option>
+                  </select>
+            </div>
+
+                <div class="wrapper">
+                    <label for="gender">Gender: <br/>
+                        <labelfor="male">Male</label>
+                        <input type="radio" id="male" name="gender"
+                        value="male" required><br
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender"
+                        value="female" required>
+
+                    </label>
+                </div>
+                <div class="wrapper">
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </div>
+        </form>
+</body>
+</html>

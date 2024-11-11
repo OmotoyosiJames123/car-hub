@@ -1,0 +1,47 @@
+*{
+    font-size: 30PX;
+}
+
+span{
+    border: 5px solid red;
+    border-radius: 1rem;
+    padding: 0.4ca
+}
+
+.wrap{
+    background: transparent;
+    color:beige;
+    padding: 30px 20px;
+    border: thick double solid 
+}
+
+.one {
+    width: 30%;
+    background: red;
+    padding: 50px;
+    border: thin dotted white;
+margin: 1rem 0rem;
+} 
+
+.three {
+    background: green
+}
+
+.one:hover {
+background: yellow;
+}
+.one:first-child{
+    background: green;
+}
+.one:last-child{
+    background: black;
+    
+}
+
+.content::first-line {
+    color: crimson;
+}
+.content::first-letter {
+    font-size: 50px;
+    margin-left: 60px;
+}

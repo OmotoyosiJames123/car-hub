@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Objects</title>
+    <script>
+        let strObj = new Object("Hello Java");
+        document.write(strObj);
+        let str2 = new Object(" Is Fun ");
+        document.write("<br> no of characters" + strObj.length);
+        document.write("<br> char at 6 is" + strObj.charAt(6));
+        document.write("<br> new is = " + strObj.concat(str2));
+        document.write("<br> IndexOf v = " + strObj.indexOf('v'));
+        document.write("<br> Replace Java " + strObj.replace('java', 'script'));
+        document.write("<br> Return 'Is' = " + str2.substring(4, 7));
+        document.write("<br> Return 'Is' = " + strObj.substring(7, 10));
+
+        let mee = "testing";
+        alert(mee.indexOf('s'))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

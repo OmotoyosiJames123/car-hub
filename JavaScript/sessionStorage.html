@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage</title>
+    <script>
+        //sessionStorage.setItem('name', "Peter Tinubu");
+        //sessionStorage.setItem('age', "90");
+        const getDetails = () => {
+            let name = sessionStorage.getItem('name');
+            let age = sessionStorage.getItem('age');
+            alert("name: "+ name + "\nAge: " + age);
+        }
+        const removeAge = () => {
+            let name = sessionStorage.getItem('name');
+            let age = sessionStorage.getItem('age');
+            alert("name: "+ name + "\nAge: " + age);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="getDetails()" >Get Details</button>&nbsp;
+    <button onclick="removeage()" >Remove</button>
+</body>
+</html>

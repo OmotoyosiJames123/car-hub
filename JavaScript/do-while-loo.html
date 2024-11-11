@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do-while-loop</title>
+    <script>
+        let opt;
+        let bal = 0.00; let amt = 0.00; do {
+            opt =
+            parslnt(prompt("choose option 1, Deposit | 2, withdrawal | 3, Deposit | 0, Exit"));
+            if (opt === 1){
+             amt =parselnt(prompt("Enter deposit amount"));
+             bal= parseFloat(bal + amt);
+             alert("New Balance: " + amt);
+            } else if (opt === 2){
+            amt =parselnt(prompt("Enter amount to widthdraw"));
+             bal = parseFloat(bal - amt);
+             alert("New Balance: " + bal);
+            } else if (opt === 3) {alert("balance is :"+bal);}
+            else {alert('sorry, 0 - 3 only');}
+            }while (opt !== 0);
+    document.writeln("Thanks N Good Bye");
+    </script>
+</head>
+<body>  
+    
+</body>
+</html>

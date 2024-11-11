@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexedDB</title>
+    <script>
+        let indexedDB =window.indexedDB;
+        let request = indexedDB.open("companyDB",1);
+        request.onsucess = function (event) {
+            alert("Opened DB")
+        };
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

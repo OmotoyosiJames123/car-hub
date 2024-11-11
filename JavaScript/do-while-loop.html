@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do while</title>
+    <script>
+        let opt;
+        let bal = 0.00; let amt = 0.00;
+        do {
+            opt = parselnt(prompt("Choose option 1, Deposit | 2, Withdrawal | 3, Exit"));
+            if (opt === 1){
+                amt = parseInt(prompt("Enter Deposit Amount"));
+                bal = parseFloat(bal + amt);
+                alert("New Balance is :" + bal);
+            }else if(opt === 2){
+                amt = parseInt(prompt("Enter amount to withdraw"));
+                bal = parseFloat(bal - amt);
+                alert("New Balance is :" + bal);}
+
+            }
+            else { alert ("sorry, 1 - 3 only");}
+        } while (opt !== 0);
+        document.writeln("Good bye");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

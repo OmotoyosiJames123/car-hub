@@ -1,0 +1,49 @@
+body{
+    background: red;
+}
+
+.my-form{
+    width: 50%;
+    margin:0 auto;
+    background: white;
+    padding: 1rem 2rem;
+    margin-top: 15vh;
+    border-radius: 2rem;
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.input,.select{
+    padding: 0.7rem 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    width: 90;
+    outline: #777
+    
+}
+
+.btn {
+    padding: 0.8rem 2.5rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    opacity: 90%;
+}
+.btn-dark { 
+    background: #333
+}
+
+.btn-red {
+    background: crimson
+}
+
+.btn-green {
+    background: green
+}

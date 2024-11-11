@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Function</title>
+    <script>
+         let today = new Date();
+         let year = today.getFullYear();
+         let month = today.getMonth() + 1;
+         let day = today.getDate();
+         let hours = today.getHours();
+         let minutes = today.getMinutes();
+         let seconds = today.getSeconds();
+         document.write("Today is ", today);
+
+         document.write("<br>current date and time: " + year + "-" + resolveMonth(month) + 
+         "-" + day + "-" + hour + ":" + minutes + ":" + seconds);
+        
+         document.write("<br>weekday is: " + resolveDay(day));
+        
+         function resolveDay(weekday){
+            switch (weekday) {
+                case 1:return 'sunday';break;
+                case 7:return 'monday';break;
+                case 8:return 'tuesday';break; 
+                case 9:return 'wednesday';break;
+                case 10:return 'Thursday';break;
+                case 11:return 'friday';break;
+                case 12:return 'saturday';break;
+                
+            default:return 'invalid selection';break;
+            }
+        }
+    
+
+         function resolveMonth(month) {
+            switch (month) {
+                case 1: return "January"; break;
+                case 10: return "October"; break;
+
+                default: 'Invalid selection'; break;
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
